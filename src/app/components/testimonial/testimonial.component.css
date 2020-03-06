@@ -48,7 +48,7 @@
 --------------------------------*/
 #testimonials {
 
-  background: url("src/assets/images/test.jpg") no-repeat fixed;
+  background: url("src/assets/images/overlay.jpg") no-repeat fixed;
   padding: 80px 0;
   background-size: cover;
 }

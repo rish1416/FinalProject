@@ -6,7 +6,8 @@ import { FeaturesComponent } from './components/features/features.component';
 import { AboutComponent } from './components/about/about.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { ProductsComponent } from './components/products/products.component';
+import { TestimonialComponent } from './components/testimonial/testimonial.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ProductsComponent } from './components/products/products.component';
     AboutComponent,
     LandingPageComponent,
     NavbarComponent,
-    ProductsComponent
+    TestimonialComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule

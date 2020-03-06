@@ -418,11 +418,12 @@
 
 	.demo-1 .sl-slide blockquote {
 		margin-bottom: -120px;
+    display: none;
 	}
 
 	.demo-1 .sl-slide h2 {
 		line-height: 22px;
-		font-size: 18px;
+		font-size: 12px;
 		margin-bottom: -40px;
 		letter-spacing: 8px;
 	}
@@ -433,9 +434,58 @@
 		height: 40px;
 		font-size: 120px;
 		left: -45px;
+    display: none;
 	}
+  .demo-1{
+    height: 40vh;
+    width: 100%;
+  }
 
 
+  .nav-arrows span {
+    position: absolute;
+    z-index: 2000;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    border: 8px solid #ddd;
+    border: 8px solid rgba(150,150,150,0.4);
+    text-indent: -90000px;
+    margin: auto;
+    cursor: pointer;
+
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .nav-arrows span.nav-arrow-prev {
+    left: 5%;
+    border-right: none;
+    border-top: none;
+  }
+
+  .nav-arrows span.nav-arrow-next {
+    right: 5%;
+    border-left: none;
+    border-bottom: none;
+  }
+
+  .nav-dots span {
+    width: 4px;
+    height: 4px;
+  }
+  .nav-dots span.nav-dot-current:after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    top: 1px;
+    left: 1px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.8);
+  }
 }
 
 
