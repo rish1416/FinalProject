@@ -8,6 +8,13 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { TestimonialComponent } from './components/testimonial/testimonial.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { TermsComponent } from './components/terms/terms.component';
+import {RouterModule} from '@angular/router';
+import {AppRoutingModule} from './app-routing.module';
+import {APP_BASE_HREF} from '@angular/common';
+import { BodyComponent } from './components/body/body.component';
+import { PolicyComponent } from './components/policy/policy.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +24,18 @@ import { ContactsComponent } from './components/contacts/contacts.component';
     LandingPageComponent,
     NavbarComponent,
     TestimonialComponent,
-    ContactsComponent
+    ContactsComponent,
+    FooterComponent,
+    TermsComponent,
+    BodyComponent,
+    PolicyComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [{provide: APP_BASE_HREF, useValue: '/'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
