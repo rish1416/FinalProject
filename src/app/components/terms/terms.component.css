@@ -1,3 +1,13 @@
+
+.container{
+  margin-top: 30px;
+  background-color: #f7f7f7;
+  padding: 30px;
+  box-shadow: 5px 5px 5px 2px #e1e1e1;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+
 /* General button style (reset) */
 .button {
   border: none;
